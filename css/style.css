@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Mono:500');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
+
+body {
+	//font-family: 'Lora', serif;
+	font-family: 'Libre Baskerville', serif;
+}
+// ::selection {
+//     color: chocolate;
+//     background-color: silver;
+// }
+header {
+	font-size: 5rem;
+	text-align: center;
+}
+big {
+	font-weight: bold;
+	//color: #866f44;
+}
+a.navbar-brand {
+	color: #000;
+}
+section {
+	margin: 20px 0 40px 0;
+}
+#clocks {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	//justify-content: space-between;
+	//align-items: flex-start;
+}
+.timezone {
+	display: flex;
+	flex-flow: column wrap;
+	align-content: space-around;
+	//padding: 0 20px;
+}
+.clock {
+	margin-bottom: 40px;
+} 
+
+.city {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.city img {
+	display: none;
+	height: 20px;
+	margin-right: 10px;
+}
+.city img.visible {
+	display: inline;
+}
+.time {
+	display: block;
+	font-size: 1.3rem;
+	font-family: 'Roboto Mono', monospace;
+} 
+.date {
+	display: block;
+	font-size: .8rem;
+	//font-family: 'Roboto Mono', monospace;
+} 

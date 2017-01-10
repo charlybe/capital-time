@@ -1,0 +1,231 @@
+<html>
+
+<head>
+	<title>Times</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	<!-- General -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+	<!-- Boostrap -->
+	<link href="assets/3d/boostrap/css/bootstrap.min.css" rel="stylesheet">
+	<script src="assets/3d/boostrap/js/bootstrap.min.js"></script>
+
+	<!-- Swiper -->
+	<link href="assets/3d/swiper/css/swiper.min.css" rel="stylesheet">
+	<script src="assets/3d/swiper/js/swiper.jquery.min.js"></script>
+
+	<!-- This -->
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+	<link href="css/style.css" rel="stylesheet">
+
+
+	<script>
+	$(document).ready(function() {
+
+	  window.setInterval(function(){
+	    var now = new Date();
+
+
+
+      var dateOptions = { timeZone: 'America/Toronto', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      var cDate = now.toLocaleDateString('en-US', dateOptions);
+      var cTime = now.toLocaleTimeString('en-US', { timeZone: 'America/Toronto', hour12: false});
+      $('#toronto .time').text(cTime);
+      $('#toronto .date').text(cDate);
+
+      var dateOptions = { timeZone: 'America/Vancouver', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      var cDate = now.toLocaleDateString('en-US', dateOptions);
+      var cTime = now.toLocaleTimeString('en-US', { timeZone: 'America/Vancouver', hour12: false});
+      $('#vancouver .time').text(cTime);
+      $('#vancouver .date').text(cDate);      
+	    
+	    var dateOptions = { timeZone: 'America/New_York', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'America/New_York', hour12: false});
+	    $('#new_york .time').text(cTime);
+	    $('#new_york .date').text(cDate);
+
+
+      var dateOptions = { timeZone: 'Europe/Vienna', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      var cDate = now.toLocaleDateString('en-US', dateOptions);
+      var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Vienna', hour12: false });
+      $('#vienna .time').text(cTime);
+      $('#vienna .date').text(cDate);
+
+	    
+	    var dateOptions = { timeZone: 'Europe/London', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/London', hour12: false });
+	    $('#london .time').text(cTime);
+	    $('#london .date').text(cDate);
+
+	    var dateOptions = { timeZone: 'Europe/Amsterdam', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/London', hour12: false });
+	    $('#amsterdam .time').text(cTime);
+	    $('#amsterdam .date').text(cDate);
+
+	    var dateOptions = { timeZone: 'Europe/Berlin', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Berlin', hour12: false });
+	    $('#berlin .time').text(cTime);
+	    $('#berlin .date').text(cDate);
+
+	    var dateOptions = { timeZone: 'Europe/Rome', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Rome', hour12: false });
+	    $('#rome .time').text(cTime);
+	    $('#rome .date').text(cDate);
+
+      var dateOptions = { timeZone: 'Europe/Paris', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+      var cDate = now.toLocaleDateString('en-US', dateOptions);
+      var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Paris', hour12: false });
+      $('#paris .time').text(cTime);
+      $('#paris .date').text(cDate);
+
+	    var dateOptions = { timeZone: 'Europe/Kiev', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Kiev', hour12: false });
+	    $('#kiev .time').text(cTime);
+	    $('#kiev .date').text(cDate);
+
+	    var dateOptions = { timeZone: 'Europe/Moscow', weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+	    var cDate = now.toLocaleDateString('en-US', dateOptions);
+	    var cTime = now.toLocaleTimeString('en-US', { timeZone: 'Europe/Moscow', hour12: false });
+	    $('#moscow .time').text(cTime);
+	    $('#moscow .date').text(cDate);        
+	  
+	  }, 1000);
+
+	})
+	</script>
+
+
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-toggleable-md">
+  <!-- <a href="/" class="navbar-brand"><big>C5</big><sup>&reg;</sup></a> -->
+  <div class="collapse navbar-collapse justify-content-center">
+        <a href="/" class="navbar-brand"><big>C5</big><sup>&reg;</sup></a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <div class="" hidden>
+          <button class="btn btn-outline-inverse" type="submit">Go</button>
+        </div>
+      </div>
+</nav>
+
+
+
+<div class="container text-center">
+
+  <h1 class="display-4">Time<br><small>in world capitals</small></h1>
+  <p class=""><b>Task:</b> To know the time in the capitals of the world</p>
+
+  <section>
+    <article>
+      
+    </article>
+  </section>
+
+</div>
+
+
+
+<div id="clocks" class="black">
+
+  <div class="timezone">
+    <div id="vancouver" class="clock" data-city="Vancouver">
+      <span class="city"><img src="images/countries/flags/ca.png">Vancouver</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+  <div class="timezone">
+    <div id="new_york" class="clock" data-city="New York">
+      <span class="city"><img class="visible" src="images/countries/flags/us.png">New York</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+    <div id="toronto" class="clock" data-city="Toronto">
+      <span class="city"><img src="images/countries/flags/ca.png">Toronto</span>
+      <span class="time"></span><span class="date"></span>
+    </div>  
+  </div>
+
+
+  <div class="timezone">
+    <div id="vienna" class="clock" data-city="Vienna">
+      <span class="city"><img src="images/countries/flags/at.png">Vienna</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+  <div class="timezone">
+    <div id="london" class="clock" data-city="London">
+      <span class="city"><img class="visible" src="images/countries/flags/gb.png">London</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+    <div id="amsterdam" class="clock" data-city="Amsterdam">
+      <span class="city"><img src="images/countries/flags/nl.png">Amsterdam</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+  <div class="timezone">
+    <div id="paris" class="clock" data-city="Paris">
+      <span class="city"><img src="images/countries/flags/fr.png">Paris</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+    <div id="berlin" class="clock" data-city="Berlin">
+      <span class="city"><img src="images/countries/flags/de.png">Berlin</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+    <div id="rome" class="clock" data-city="Rome">
+      <span class="city"><img src="images/countries/flags/it.png">Rome</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+  <div class="timezone">
+    <div id="kiev" class="clock" data-city="Kiev">
+      <span class="city"><img class="visible" src="images/countries/flags/ua.png">Kiev</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+  <div class="timezone">
+    <div id="moscow" class="clock" data-city="Moscow">
+      <span class="city"><img src="images/countries/flags/ru.png">Moscow</span>
+      <span class="time"></span><span class="date"></span>
+    </div>
+  </div>
+
+</div>  
+
+
+
+</body>
+
+</html>
